@@ -1,13 +1,14 @@
 # Learning JavaScript 🏗️
 
-This repository contains my hands-on practice and experiments while learning JavaScript. 
+This repository contains my hands-on practice and experiments while learning JavaScript.
 
 ## Objectives 🎯
 
 ## Structure 📂
 
 - 00-core/
-    - 001-javascript-fundamentals-1/
+  - 001-javascript-fundamentals-1/
+  - 002-javascript-fundamentals-2/
 - 01-projects/
 
 ## Key Topics Covered 🧠
