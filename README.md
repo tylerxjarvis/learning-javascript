@@ -13,7 +13,8 @@ This repository contains my hands-on practice and experiments while learning Jav
 
 ## Key Topics Covered 🧠
 
-- Data Types
+- Data Structures & Types
+- Function
 - Operators & Operator Precedence
 - Strings & Template Literals
 - Variables & Values
