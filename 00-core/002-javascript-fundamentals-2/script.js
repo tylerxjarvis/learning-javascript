@@ -1,12 +1,17 @@
 
-function fruitProcessor(apples, oranges) {
-    console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice;
+function calculateAge(birthYear, currentYear) {
+    return currentYear - birthYear;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+function yearsUntilRetirement(birthYear, name) {
+    const currentAge = calculateAge(birthYear, 2025);
+    const retirement = 65 - currentAge;
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+    if (retirement > 0) {
+        console.log(`${name} has ${retirement} years until retirement!`);
+    } else {
+        console.log(`${name} can retire!`);
+    }
+}
+
+console.log(yearsUntilRetirement(1950, 'Tyler'));
