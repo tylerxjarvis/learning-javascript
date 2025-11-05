@@ -1,17 +1,5 @@
-
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-
-const checkWinner = function (avgDolphins, avgKoalas) {
-    if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= 2 * avgDolphins) {
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-    } else {
-        console.log('No team wins...');
-    }
-}
-
-checkWinner(scoreDolphins, scoreKoalas);
+const personalDetails = [];
+personalDetails[personalDetails.length] = prompt("What is your first name?");
+personalDetails[personalDetails.length] = prompt("What is your last name?");
+personalDetails[personalDetails.length] = prompt("How old are you?");
+console.log(personalDetails);

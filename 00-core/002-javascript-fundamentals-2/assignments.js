@@ -1,4 +1,3 @@
-
 // ASSIGNMENT 1 - functions
 
 // // define the describeCountry function
@@ -12,9 +11,9 @@
 
 // ASSIGNMENT 2 - function declarations vs. expressions
 
-// define the function declaration 
+// // define the function declaration
 function percentageOfWorld1(population) {
-    return population / 8000 * 100;
+  return (population / 8000) * 100;
 }
 
 // console.log(percentageOfWorld1(1408)); // log to the console
@@ -35,15 +34,36 @@ function percentageOfWorld1(population) {
 
 // ASSIGNMENT 4 - functions calling other functions
 
-// define the function declaration
-function describePopulation(country, population) {
-    const percentage = percentageOfWorld1(population); // call the percentageOfWorld1 function
-    return `${country} has ${population} million people, which is ${percentage}% of the world.`;
+// // define the function declaration
+// function describePopulation(country, population) {
+//     const percentage = percentageOfWorld1(population); // call the percentageOfWorld1 function
+//     return `${country} has ${population} million people, which is ${percentage}% of the world.`;
+// }
+
+// console.log(describePopulation('China', 1408)); // log to the console
+
+// ASSIGNMENT 5 - introduction to arrays
+
+// define the array
+const populations = [2200, 5800, 6400, 3700];
+
+// determine if the array has 4 values
+if (populations.length == 4) {
+  console.log(true);
+} else {
+  console.log(false);
 }
 
-console.log(describePopulation('China', 1408)); // log to the console
+// define the array
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
 
-// ASSIGNMENT 5 - introduction to arrays 
+// log to the console
+console.log(percentages);
 
 // ASSIGNMENT 6 - basic array operations (methods)
 

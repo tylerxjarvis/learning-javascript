@@ -9,9 +9,8 @@ This repository contains my hands-on practice and experiments while learning Jav
 - 00-core/
   - 001-javascript-fundamentals-1/
   - 002-javascript-fundamentals-2/
-  - 003-dom-and-events/
-  - 004-javascripts-behind-the-scenes/
 - 01-miscellaneous/
+  - 011-developer-skills/
 - 02-projects/
 
 ## Key Topics Covered 🧠
@@ -30,4 +29,4 @@ This repository contains my hands-on practice and experiments while learning Jav
 
 #### Useful Commands
 
-- 'use strict';     # activate strict mode
+- 'use strict'; # activate strict mode
