@@ -1,17 +1,17 @@
 
-function calculateAge(birthYear, currentYear) {
-    return currentYear - birthYear;
-}
+const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-function yearsUntilRetirement(birthYear, name) {
-    const currentAge = calculateAge(birthYear, 2025);
-    const retirement = 65 - currentAge;
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
 
-    if (retirement > 0) {
-        console.log(`${name} has ${retirement} years until retirement!`);
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
     } else {
-        console.log(`${name} can retire!`);
+        console.log('No team wins...');
     }
 }
 
-console.log(yearsUntilRetirement(1950, 'Tyler'));
+checkWinner(scoreDolphins, scoreKoalas);
