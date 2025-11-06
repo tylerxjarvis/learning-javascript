@@ -12,9 +12,9 @@
 // ASSIGNMENT 2 - function declarations vs. expressions
 
 // // define the function declaration
-function percentageOfWorld1(population) {
-  return (population / 8000) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / 8000) * 100;
+// }
 
 // console.log(percentageOfWorld1(1408)); // log to the console
 
@@ -44,28 +44,49 @@ function percentageOfWorld1(population) {
 
 // ASSIGNMENT 5 - introduction to arrays
 
-// define the array
-const populations = [2200, 5800, 6400, 3700];
+// // define the array
+// const populations = [2200, 5800, 6400, 3700];
 
-// determine if the array has 4 values
-if (populations.length == 4) {
-  console.log(true);
-} else {
-  console.log(false);
-}
+// // determine if the array has 4 values
+// if (populations.length == 4) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
 
-// define the array
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3]),
-];
+// // define the array
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[3]),
+// ];
 
-// log to the console
-console.log(percentages);
+// // log to the console
+// console.log(percentages);
 
 // ASSIGNMENT 6 - basic array operations (methods)
+
+// define the array
+const neighbours = ["New Zealand", "Tasmania"];
+console.log(neighbours); // log to the console)
+
+// add the value to the end of the array
+neighbours.push("Fiji");
+console.log(neighbours); // log to the console
+
+// remove the value from the end of the array
+neighbours.pop("Fiji");
+console.log(neighbours); // log to the console
+
+// determine if the array contains the value
+if (neighbours.includes("Germany") == false) {
+  console.log("Probably not a central european country.");
+}
+
+// change the value of a neighbour
+neighbours[neighbours.length - 1] = "Samoa";
+console.log(neighbours); // log to the console
 
 // ASSIGNMENT 7 - introduction to objects
 
