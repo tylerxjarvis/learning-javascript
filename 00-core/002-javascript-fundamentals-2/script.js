@@ -46,4 +46,10 @@ const aboutMe = {
   pets: ["Arlo", "Indi"],
 };
 
-console.log(aboutMe.pets[0]);
+aboutMe.location = "Perth";
+
+console.log(aboutMe);
+
+console.log(
+  `${aboutMe.firstName} has ${aboutMe.pets.length} pets, and the first one is ${aboutMe.pets[0]}!`
+);
