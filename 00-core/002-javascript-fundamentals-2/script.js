@@ -39,26 +39,26 @@
 
 // console.log(tips);
 
-const aboutMe = {
-  firstName: "Tyler",
-  lastName: "Jarvis",
-  birthYear: 1996,
-  hasDriversLicense: true,
-  profession: "Software Engineer",
-  partner: "Kate",
-  pets: ["Arlo", "Indi"],
-  calculateAge: function () {
-    return (this.age = 2025 - this.birthYear);
-  },
-  prepareSummary: function () {
-    this.calculateAge();
-    return (this.summary = `${this.firstName} is a ${this.age}-year old ${
-      this.profession
-    }. He has a partner called ${this.partner} and ${
-      this.pets.length
-    } pets, and has ${this.hasDriversLicense ? "a" : "no"} drivers license.`);
-  },
-};
+// const aboutMe = {
+//   firstName: "Tyler",
+//   lastName: "Jarvis",
+//   birthYear: 1996,
+//   hasDriversLicense: true,
+//   profession: "Software Engineer",
+//   partner: "Kate",
+//   pets: ["Arlo", "Indi"],
+//   calculateAge: function () {
+//     return (this.age = 2025 - this.birthYear);
+//   },
+//   prepareSummary: function () {
+//     this.calculateAge();
+//     return (this.summary = `${this.firstName} is a ${this.age}-year old ${
+//       this.profession
+//     }. He has a partner called ${this.partner} and ${
+//       this.pets.length
+//     } pets, and has ${this.hasDriversLicense ? "a" : "no"} drivers license.`);
+//   },
+// };
 
 // aboutMe.location = "Perth";
 
@@ -70,5 +70,15 @@ const aboutMe = {
 
 // console.log(aboutMe.calculateAge(aboutMe.birthYear));
 // console.log(aboutMe["calculateAge"](1996));
-aboutMe.prepareSummary();
-console.log(aboutMe.summary);
+// aboutMe.prepareSummary();
+// console.log(aboutMe.summary);
+
+// for (let repetition = 1; repetition <= 10; repetition++) {
+//   console.log(`Lifting a weight, repetition ${repetition}!`);
+// }
+
+const testArray = ["Tyler", "Kate", "Cody"];
+
+for (let i = 0; i < testArray.length; i++) {
+  console.log(testArray[i], typeof testArray[i]);
+}

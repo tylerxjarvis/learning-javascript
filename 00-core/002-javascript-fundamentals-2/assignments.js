@@ -116,30 +116,46 @@
 
 // ASSIGNMENT 9 - object methods
 
-// define the object
-const myCountry = {
-  country: "Australia",
-  capital: "Canberra",
-  language: "English",
-  population: 25,
-  landNeighbours: [],
-  // define the methods
-  checkIsland: function () {
-    return (this.isIsland = this.landNeighbours.length === 0 ? true : false);
-  },
-  describe: function () {
-    return `${this.country} has ${this.population}-million ${this.language}-speaking people, with ${this.landNeighbours.length} land-neighbouring countries and a capital called ${this.capital}.`;
-  },
-};
+// // define the object
+// const myCountry = {
+//   country: "Australia",
+//   capital: "Canberra",
+//   language: "English",
+//   population: 25,
+//   landNeighbours: [],
+//   // define the methods
+//   checkIsland: function () {
+//     return (this.isIsland = this.landNeighbours.length === 0 ? true : false);
+//   },
+//   describe: function () {
+//     return `${this.country} has ${this.population}-million ${this.language}-speaking people, with ${this.landNeighbours.length} land-neighbouring countries and a capital called ${this.capital}.`;
+//   },
+// };
 
-myCountry.checkIsland();
-myCountry.describe();
-console.log(myCountry.checkIsland());
-console.log(myCountry.describe());
+// myCountry.checkIsland();
+// myCountry.describe();
+// console.log(myCountry.checkIsland());
+// console.log(myCountry.describe());
 
 // ASSIGNMENT 10 - iteration: the for loop
 
+// // define the for loop
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting.`);
+// }
+
 // ASSIGNMENT 11 - looping arrays, breaking, and continuing
+
+// define the arrays
+const populations = [22, 53, 17, 14];
+const percentages = [];
+
+// define the loop
+for (let i = 0; i < populations.length; i++) {
+  percentages.push((populations[i] / 8000) * 100);
+}
+
+console.log(percentages);
 
 // ASSIGNMENT 12 - looping backwards and loops in loops
 
