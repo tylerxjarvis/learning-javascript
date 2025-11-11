@@ -67,32 +67,75 @@
 
 // ASSIGNMENT 6 - basic array operations (methods)
 
-// define the array
-const neighbours = ["New Zealand", "Tasmania"];
-console.log(neighbours); // log to the console)
+// // define the array
+// const neighbours = ["New Zealand", "Tasmania"];
+// console.log(neighbours); // log to the console)
 
-// add the value to the end of the array
-neighbours.push("Fiji");
-console.log(neighbours); // log to the console
+// // add the value to the end of the array
+// neighbours.push("Fiji");
+// console.log(neighbours); // log to the console
 
-// remove the value from the end of the array
-neighbours.pop("Fiji");
-console.log(neighbours); // log to the console
+// // remove the value from the end of the array
+// neighbours.pop("Fiji");
+// console.log(neighbours); // log to the console
 
-// determine if the array contains the value
-if (neighbours.includes("Germany") == false) {
-  console.log("Probably not a central european country.");
-}
+// // determine if the array contains the value
+// if (neighbours.includes("Germany") == false) {
+//   console.log("Probably not a central european country.");
+// }
 
-// change the value of a neighbour
-neighbours[neighbours.length - 1] = "Samoa";
-console.log(neighbours); // log to the console
+// // change the value of a neighbour
+// neighbours[neighbours.length - 1] = "Samoa";
+// console.log(neighbours); // log to the console
 
 // ASSIGNMENT 7 - introduction to objects
 
+// // define the object
+// const myCountry = {
+//   country: "Australia",
+//   capital: "Canberra",
+//   language: "English",
+//   population: 25,
+//   neighbours: ["New Zealand"],
+// };
+
 // ASSIGNMENT 8 - dot vs. bracket notation
 
+// log to the console
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, with ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+// );
+
+// // increase the population using dot notation
+// myCountry.population += 2;
+// console.log(myCountry.population);
+
+// // decrease the population using bracket notation
+// myCountry["population"] -= 2;
+// console.log(myCountry.population);
+
 // ASSIGNMENT 9 - object methods
+
+// define the object
+const myCountry = {
+  country: "Australia",
+  capital: "Canberra",
+  language: "English",
+  population: 25,
+  landNeighbours: [],
+  // define the methods
+  checkIsland: function () {
+    return (this.isIsland = this.landNeighbours.length === 0 ? true : false);
+  },
+  describe: function () {
+    return `${this.country} has ${this.population}-million ${this.language}-speaking people, with ${this.landNeighbours.length} land-neighbouring countries and a capital called ${this.capital}.`;
+  },
+};
+
+myCountry.checkIsland();
+myCountry.describe();
+console.log(myCountry.checkIsland());
+console.log(myCountry.describe());
 
 // ASSIGNMENT 10 - iteration: the for loop
 

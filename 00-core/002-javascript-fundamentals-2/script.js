@@ -42,14 +42,33 @@
 const aboutMe = {
   firstName: "Tyler",
   lastName: "Jarvis",
+  birthYear: 1996,
+  hasDriversLicense: true,
+  profession: "Software Engineer",
   partner: "Kate",
   pets: ["Arlo", "Indi"],
+  calculateAge: function () {
+    return (this.age = 2025 - this.birthYear);
+  },
+  prepareSummary: function () {
+    this.calculateAge();
+    return (this.summary = `${this.firstName} is a ${this.age}-year old ${
+      this.profession
+    }. He has a partner called ${this.partner} and ${
+      this.pets.length
+    } pets, and has ${this.hasDriversLicense ? "a" : "no"} drivers license.`);
+  },
 };
 
-aboutMe.location = "Perth";
+// aboutMe.location = "Perth";
 
-console.log(aboutMe);
+// console.log(aboutMe);
 
-console.log(
-  `${aboutMe.firstName} has ${aboutMe.pets.length} pets, and the first one is ${aboutMe.pets[0]}!`
-);
+// console.log(
+//   `${aboutMe.firstName} has ${aboutMe.pets.length} pets, and the first one is ${aboutMe.pets[0]}!`
+// );
+
+// console.log(aboutMe.calculateAge(aboutMe.birthYear));
+// console.log(aboutMe["calculateAge"](1996));
+aboutMe.prepareSummary();
+console.log(aboutMe.summary);
