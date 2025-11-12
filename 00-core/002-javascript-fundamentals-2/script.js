@@ -77,8 +77,31 @@
 //   console.log(`Lifting a weight, repetition ${repetition}!`);
 // }
 
-const testArray = ["Tyler", "Kate", "Cody"];
+// const testArray = ["Tyler", "Kate", "Cody"];
 
-for (let i = 0; i < testArray.length; i++) {
-  console.log(testArray[i], typeof testArray[i]);
+// // loop forward
+// for (let i = 0; i < testArray.length; i++) {
+//   console.log(testArray[i]);
+// }
+
+// // loop backwards
+// for (let i = testArray.length - 1; i >= 0; i--) {
+//   console.log(testArray[i]);
+// }
+
+// // define a loop within a loop
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`---- Starting exercise ${exercise}!`);
+
+//   for (let repetition = 1; repetition <= 5; repetition++) {
+//     console.log(
+//       `---- Performing exercise ${exercise} repetition: ${repetition}!`
+//     );
+//   }
+// }
+
+let repetition = 1;
+while (repetition <= 10) {
+  console.log(`Performing repetition: ${repetition}`);
+  repetition++;
 }
