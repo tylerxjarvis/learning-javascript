@@ -9,6 +9,7 @@ This repository contains my hands-on practice and experiments while learning Jav
 - 00-core/
   - 001-javascript-fundamentals-1/
   - 002-javascript-fundamentals-2/
+  - 003-dom-and-events/
 - 01-miscellaneous/
   - 011-developer-skills/
 - 02-projects/
@@ -16,6 +17,7 @@ This repository contains my hands-on practice and experiments while learning Jav
 ## Key Topics Covered 🧠
 
 - Data Structures & Types
+- DOM & Events
 - Functions
 - Operators & Operator Precedence
 - Strings & Template Literals
