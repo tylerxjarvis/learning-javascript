@@ -146,17 +146,46 @@
 
 // ASSIGNMENT 11 - looping arrays, breaking, and continuing
 
+// // define the arrays
+// const populations = [22, 53, 17, 14];
+// const percentages = [];
+
+// // define the loop
+// for (let i = 0; i < populations.length; i++) {
+//   percentages.push((populations[i] / 8000) * 100);
+// }
+
+// log to the console
+// console.log(percentages);
+
+// ASSIGNMENT 12 - looping backwards and loops in loops
+
+// // define the array
+// const listOfNeighbours = [
+//   ["Canada", "Mexico"],
+//   ["Spain"],
+//   ["Norway", "Sweden", "Russia"],
+// ];
+
+// // log to the console
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//   for (let y = 0; y < listOfNeighbours[i].length; y++) {
+//     console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+//   }
+// }
+
+// ASSIGNMENT 13 - the while loop
+
 // define the arrays
 const populations = [22, 53, 17, 14];
 const percentages = [];
 
-// define the loop
-for (let i = 0; i < populations.length; i++) {
+// define the while loop
+let i = 0;
+while (i < populations.length) {
   percentages.push((populations[i] / 8000) * 100);
+  i++;
 }
 
+// log to the console
 console.log(percentages);
-
-// ASSIGNMENT 12 - looping backwards and loops in loops
-
-// ASSIGNMENT 13 - the while loop
