@@ -12,6 +12,7 @@ This repository contains my hands-on practice and experiments while learning Jav
   - 003-dom-and-events/
 - 01-miscellaneous/
   - 011-developer-skills/
+  - 012-css-and-html/
 - 02-projects/
 
 ## Key Topics Covered 🧠
