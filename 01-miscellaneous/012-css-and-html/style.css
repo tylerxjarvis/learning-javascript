@@ -12,16 +12,32 @@ body {
 
 h1 {
   font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .first {
   color: rgb(172, 82, 151);
+  font-size: 15px;
+  padding: 20px;
+}
+
+.second {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #test-box {
   background-color: blanchedalmond;
   border: 5px solid #444;
-  margin: 15px;
   padding: 50px;
   text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
