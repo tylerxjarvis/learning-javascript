@@ -10,6 +10,7 @@ This repository contains my hands-on practice and experiments while learning Jav
   - 001-javascript-fundamentals-1/
   - 002-javascript-fundamentals-2/
   - 003-dom-and-events/
+  - 004-data-structures-and-operators/
 - 01-miscellaneous/
   - 011-developer-skills/
   - 012-css-and-html/
